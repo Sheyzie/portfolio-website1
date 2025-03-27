@@ -1,0 +1,188 @@
+/* Reset all values */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: black;
+  color: #fff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding-bottom: 1000px;
+}
+
+/* Animations */
+@keyframes animate {
+  40%, 60% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+/* Styling the canvas */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+
+  border-bottom: #126e12 2px solid;
+
+  background: black;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #0aff0a;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0aff0a;
+  /* border: 1px #126e12 solid;
+  padding: 8px 8px;
+  border-radius: 3px; */
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #0aff0a;
+  transition: width 0.5s;
+  transform: translate(40, -50);
+  
+}
+
+nav ul li a:hover, nav ul li a:hover::after {
+  /* background-color: #126e12; */
+  /* opacity: 0.5; */
+  width: 50px;
+}
+
+nav ul li a:hover, nav ul li a::after:hover {
+  /* background-color: #126e12; */
+  opacity: 0.6;
+  width: 50px;  
+}
+
+/* Style for Main */
+.main-css {
+  position: relative;
+  width: 100%;
+}
+
+.first-section-css {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  padding-top: 150px;
+  padding-bottom: 30px;
+
+  background: radial-gradient(
+    circle at 82% 53%,
+    rgba(0, 0, 0, 0) 12%,
+    rgba(0, 0, 0, 0.9) 12%,
+    rgba(0, 0, 0, 0.9)
+  );
+
+  border-bottom: 2px #126e12 solid;
+}
+
+.first-section-css > div {
+  max-width: 45%; /* 35% of the main container */
+}
+
+/* .first-section-css > div:first-child {
+  max-width: 45%; /* 40% of the main container 
+} */
+
+.first-section-left-css {
+  width: 100%; /* 100% of the .first-section-css div container */
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.name-span {
+  color: rgb(110, 216, 110);
+}
+
+.profession-css {
+  
+}
+
+.profession-css ul {
+  max-width: 100%;
+}
+
+.profession-css ul li {
+  list-style: none;
+}
+
+.profession-list-css {
+  position: relative;
+  overflow-y: hidden;
+  color: #0aff0a;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profession-list-css::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: attr(data-size type(<percentage>), 0);
+  background: black;
+  border-bottom: 1px #0aff0a dotted;
+  animation: animate 5s steps(12) infinite;
+}
+
+
+.first-section-right-css {
+  /* background: radial-gradient(circle at 58% 40%, rgba(0,0,0, 0) 39%, rgba(0,0,0, 0.8) 39%, rgba(0,0,0, 0.8)); */
+  padding: 20px;
+
+  width: 30%; /* 100% of the .first-section-css div container */
+}
+
+.first-section-right-css img {
+  max-width: 100%; /* 100% of the .first-section-right-css div container */
+}
+
+
