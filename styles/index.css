@@ -232,7 +232,7 @@ nav ul li a::after:hover {
   transform: translateY(-125%);
   z-index: 1;
   /* transition: all 0.5s; */
-  animation: animateCanva 5s steps(10) infinite;
+  /* animation: animateCanva 5s steps(10) infinite; */
 }
 
 .profession-list-css::before {
