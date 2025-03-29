@@ -8,12 +8,12 @@ export let duration = 5000;
 export const professionList = [
   {
     skill: "Web Developer",
-    width: "400px",
+    width: "430px",
     duration: 0,
   },
   {
     skill: "Software Engineer",
-    width: "510px",
+    width: "540px",
     duration: 5000,
   },
 ];
