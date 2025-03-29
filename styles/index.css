@@ -15,12 +15,57 @@ body {
 
 /* Animations */
 @keyframes animate {
-  40%, 60% {
-    bottom: 100%;
+
+
+
+  50% {
+    top: -72%;
+    /* opacity: 1 */
+  }
+
+  100% {
+  top: 0;
+  background: linear-gradient(rgba(0,0,0,1) 5%, rgba(0,0,0,1));
+    
+  }
+
+  /* 40%, 60% {
+    left: attr(data-size type(<percentage>), 0);
   }
   100% {
-    bottom: 0%;
+    left: 10%;
+  } */
+}
+
+@keyframes animateCanva {
+
+  50% {
+    transform: translateY(-200%);
+    
   }
+  100% {
+    transform: translateY(-125%);
+    /* height: 0%; */
+  }
+}
+
+/* @keyframes zIndex {
+  40%,
+  60% {
+    z-index: 1;
+    
+  }
+  100% {
+    z-index: 0;
+  }
+} */
+
+.animate {
+  animation: animate 5s steps(1000) infinite;
+}
+
+.animateCanvas {
+  animation: animateCanva 5s steps(1000) infinite;
 }
 
 /* Styling the canvas */
@@ -53,7 +98,7 @@ nav {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  color: #0aff0a;
+  color: #eb0aff;
 }
 
 nav ul {
@@ -84,19 +129,20 @@ nav ul li a::after {
   background: #0aff0a;
   transition: width 0.5s;
   transform: translate(40, -50);
-  
 }
 
-nav ul li a:hover, nav ul li a:hover::after {
+nav ul li a:hover,
+nav ul li a:hover::after {
   /* background-color: #126e12; */
   /* opacity: 0.5; */
   width: 50px;
 }
 
-nav ul li a:hover, nav ul li a::after:hover {
+nav ul li a:hover,
+nav ul li a::after:hover {
   /* background-color: #126e12; */
   opacity: 0.6;
-  width: 50px;  
+  width: 50px;
 }
 
 /* Style for Main */
@@ -109,7 +155,7 @@ nav ul li a:hover, nav ul li a::after:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+
   padding-top: 150px;
   padding-bottom: 30px;
 
@@ -135,6 +181,13 @@ nav ul li a:hover, nav ul li a::after:hover {
   width: 100%; /* 100% of the .first-section-css div container */
   font-size: 3rem;
   margin: 20px 0;
+  overflow: hidden;
+}
+
+.passion {
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
 }
 
 .name-span {
@@ -142,35 +195,68 @@ nav ul li a:hover, nav ul li a::after:hover {
 }
 
 .profession-css {
+  position: relative;
+  overflow: hidden;
   
 }
 
 .profession-css ul {
   max-width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .profession-css ul li {
   list-style: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .profession-list-css {
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
+  font-family: 'Tektur', Arial, Helvetica, sans-serif;
   color: #0aff0a;
   font-weight: 700;
   text-transform: uppercase;
+  z-index: 2;
+}
+
+.profession-canva2-container {
+  position: relative;
+  overflow: hidden;
+  height: 65px;
+  width: var(--widthCanva2Container, 0);
+  background: none;
+  /* border-bottom: 1px red dotted; */
+  transform: translateY(-125%);
+  z-index: 1;
+  /* transition: all 0.5s; */
+  animation: animateCanva 5s steps(10) infinite;
 }
 
 .profession-list-css::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0%;
   left: 0;
+  height: 90%;
+  width: var(--widthBefore, 0);
+  background: linear-gradient(rgba(0,0,0,0) 5%, rgba(0,0,0,1));
+  border-top: none;
+  transform: translateY(80%);
+  animation: var(--startAnimation, animate 5s steps(1000) infinite);
+  z-index: 5;
+  transition: all 0.5s;
+  
+}
+
+.canvas2 {
   height: 100%;
-  width: attr(data-size type(<percentage>), 0);
-  background: black;
-  border-bottom: 1px #0aff0a dotted;
-  animation: animate 5s steps(12) infinite;
+  width: var(--canvas2Width, 510px);
+  z-index: 1;
+
+  /* transition: all 0.5s; */
 }
 
 
@@ -184,5 +270,3 @@ nav ul li a:hover, nav ul li a::after:hover {
 .first-section-right-css img {
   max-width: 100%; /* 100% of the .first-section-right-css div container */
 }
-
-
