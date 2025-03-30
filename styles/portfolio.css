@@ -1,0 +1,126 @@
+/* Style For Portfolio Page */
+.main-css {
+  padding-top: 90px;
+}
+
+.portfolio-first-section {
+  position: relative;
+  margin: 40px auto;
+  width: 90vw;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px 30px;
+  box-shadow: inset 2px 3px 6px #0aff0a83;
+  border-radius: 8px;
+}
+
+.portfolio-first-section h1 {
+  color: rgb(110, 216, 110);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+
+.project-container {
+  padding: 20px;
+  /* width: 60em; */
+  /* margin: auto; */
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  width: 300px;
+  display: block;
+  background: black;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: inset 5px 5px 5px rgba(0, 255, 0, 0.5),
+  inset -5px -5px 5px rgba(0, 255, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+  box-shadow: inset 5px 5px 5px rgba(235, 10, 255, 0.5),
+  inset -5px -5px 5px rgba(235, 10, 255, 0.5);
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: aqua;
+  background: blue;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.card-list .card-link .badge.vba {
+  color: #b22485;
+  background: #f7dff5;
+}
+
+.card-list .card-link .badge.vba {
+  color: #b25a2b;
+  background: #ffe3d2;
+}
+.card-list .card-link .badge.vba {
+  color: #205c20;
+  background: #d6f8d6;
+}
+.card-list .card-link .badge.vba {
+  color: #856404;
+  background: #fff3cd;
+}
+.card-list .card-link .badge.vba {
+  color: #b22485;
+  background: #f7dff5;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: rgb(235, 10, 255);
+  border-radius: 50%;
+  margin: 20px 0 5px;
+  border: 2px solid rgb(235, 10, 255);
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition: all 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: rgba(235, 10, 255, 0.5);
+}
+
+.second-section .elevator-pitch-container {
+  text-align: center;
+  vertical-align: middle;
+  margin: 70px 0;
+  font-size: 700;
+}
