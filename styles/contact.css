@@ -1,0 +1,95 @@
+.main-css {
+  padding-top: 90px;
+}
+
+.contact-first-section {
+  position: relative;
+  margin: 40px auto;
+  width: 40vw;
+  background: rgba(0,0,0,0.9);
+  padding: 30px 20px;
+  box-shadow: inset 2px 3px 6px #0aff0a83;
+  border-radius: 8px;
+}
+
+.contact-first-section h1 {
+  color: rgb(110, 216, 110);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form-container .contact-form {
+  /* padding: 20px; */
+  /* background: #fff; */
+  /* border-radius: 8px; */
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.contact-form .form-item-container {
+  width: 100%;
+}
+
+.form-item-container input, .form-item-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background: black;
+  color: #fff;
+}
+
+.form-item-container input[type=text]:focus, .form-item-container textarea:focus {
+  border: 2px solid #0aff0a;
+}
+
+.form-item-container input {
+  font-size: 16px;
+}
+
+.form-item-container textarea {
+  font-size: 14px;
+  height: 130px;
+  resize: none;
+}
+
+.error-span {
+  font-size: 12px;
+  color: red;
+  background: rgb(195, 197, 195);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.error-span li {
+  list-style: none;
+}
+
+.form-item-container button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background: #0aff0a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-item-container button:hover {
+  background: #09c909;
+}
+
+.form-item-container button:active {
+  transform: translateY(2px);
+}

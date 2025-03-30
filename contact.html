@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheyzie | Contact Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/contact.css">
+  </head>
+  <body>
+    
+    <!-- Creating the rain matrix effect -->
+     <div>
+      <canvas id="canvas1"></canvas>
+     </div>
+    
+
+      <header>
+        <nav>
+          <div class="left">
+            <img src="">
+            <p class="purple">Sheyzie</p>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main-css">
+        <section class="contact-first-section">
+
+          <div class="contact-form-container">
+            <span class="text-dark-grey">You're here, you might as well leave a message</span>
+            <h1>Contact Me</h1>
+            <form class="contact-form">
+              <div class="form-item-container">
+                <input type="text" name="name" id="name" placeholder="Name">
+              </div>
+              <div class="form-item-container">
+                <input type="text" name="email" id="email" placeholder="Email">
+              </div>
+              <div class="form-item-container">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+              </div>
+              <div class="form-item-container">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+              </div>
+              <div class="form-item-container">
+                <ul class="error-span">
+                  <li id="error-name"></li>
+                  <li id="error-email"></li>
+                  <li id="error-subject"></li>
+                  <li id="error-message"></li>
+                </ul>
+              </div>
+              <div class="form-item-container">
+                <button type="submit">Send Message</button>
+              </div>
+
+            </form>
+          </div>
+          
+        </section>
+        
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="footer-first">
+            <h3>Olukosi's Developer Portfolio</h3>
+          </div>
+          <div class="footer-second">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <div class="footer-third">
+            <div class="socials-container">
+              <a href="https://x.com/OlukosiH" target="_blank">
+                <img src="assets/img/dev-coding-twitter.png" alt="" class="social" loading="lazy">
+              </a>
+            </div>
+          </div>
+          <div class="footer-fourth">
+            <div class="socials-container">
+              <a href="https://www.linkedin.com/in/oluwaseyi-olukosi-539549358/" target="_blank">
+                <img src="assets/img/dev-coding-linkedin.png" alt="" class="social" loading="lazy">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-rights  text-dark-grey">
+          copyright &copy; oluwaseyi.sheyzie.com | All rights reserved
+        </div>
+      </footer>
+
+     <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
