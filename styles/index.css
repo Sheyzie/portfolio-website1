@@ -202,6 +202,7 @@ nav ul li a::after:hover {
 
 .passion {
   position: relative;
+  font-size: 1.5rem;
   z-index: 9;
   overflow: hidden;
   margin-bottom: 15px;
@@ -315,7 +316,7 @@ nav ul li a::after:hover {
 /* Styling for second section */
 .second-section {
   max-width: 80vw;
-  height: 400px;
+  height: 420px;
   margin: 40px auto;
   padding: 30px 20px;
   background: rgba(0, 0, 0, 0.9);
@@ -345,10 +346,13 @@ nav ul li a::after:hover {
 
 .image-top-container {
   width: 23px;
-  background: grey;
   position: relative;
   top: -32px;
   left: -9px;
+}
+
+.image-top {
+  width: 100%;
 }
 .vertical-title {
   position: relative;
@@ -372,6 +376,7 @@ footer {
   background: black;
   padding: 25px 20px;
   height: 233px;
+  bottom: 0;
 }
 .footer {
   display: flex;
@@ -389,10 +394,31 @@ footer {
 
 .footer ul li a {
   text-decoration: none;
+  color: #954a9c;
+  transition: all 0.5s;
+}
+
+.footer ul li a:hover {
+  color: #eb0aff;
+}
+
+.footer ul li a:visited {
+  color: #954a9c;
 }
 
 .footer .footer-first h3 {
-  color: #077907;
+  color: #8ba58b;
+}
+
+.socials-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.social {
+  width: 100%;
 }
 
 .text-rights {
