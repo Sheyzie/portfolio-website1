@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/about.css">
@@ -22,22 +24,35 @@
      </div>
     
 
-      <header>
-        <nav>
-          <div class="left">
-            <img src="">
-            <p class="purple">Sheyzie</p>
-          </div>
-          <div class="right">
-            <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/portfolio.html">Portfolio</a></li>
-              <li><a href="/contact.html">Contact Me</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+     <header>
+      <nav>
+        <div class="left">
+          <img src="">
+          <p class="purple">Sheyzie</p>
+        </div>
+        <div class="right">
+          <ul class="nav-main">
+            <label for="hamburger" class="hamburger-button open material-symbols-outlined">
+              menu
+            </label>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+          </ul>
+
+          <input type="checkbox" name="hamburger" id="hamburger">
+
+          <ul class="hamburger-menu">
+            <label for="hamburger" class="hamburger-button close material-symbols-outlined"><li>close</li></label>
+            <a href="/index.html"><li>Home</li></a>
+            <a href="/about.html"><li>About</li></a>
+            <a href="/portfolio.html"><li>Portfolio</li></a>
+            <a href="/contact.html"><li>Contact Me</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
       <main class="main-css">
         <section class="about-first-section">
@@ -114,6 +129,7 @@
               <li><a href="/portfolio.html">Portfolio</a></li>
               <li><a href="/contact.html">Contact Me</a></li>
             </ul>
+            
           </div>
           <div class="footer-third">
             <div class="socials-container">
@@ -121,8 +137,6 @@
                 <img src="assets/img/dev-coding-twitter.png" alt="" class="social" loading="lazy">
               </a>
             </div>
-          </div>
-          <div class="footer-fourth">
             <div class="socials-container">
               <a href="https://www.linkedin.com/in/oluwaseyi-olukosi-539549358/" target="_blank">
                 <img src="assets/img/dev-coding-linkedin.png" alt="" class="social" loading="lazy">
