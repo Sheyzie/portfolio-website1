@@ -1,6 +1,5 @@
 export const swiper = new Swiper(".card-wrapper", {
   loop: true,
-  spaceBetween: -710,
 
   // pagination bullet
   pagination: {
@@ -19,12 +18,28 @@ export const swiper = new Swiper(".card-wrapper", {
   breakpoints: {
     0: {
       slidesPerview: 1,
+      spaceBetween: 50,
+      centeredSlides: true,
     },
     768: {
       slidesPerview: 2,
+      slidesPerGroup: 2,
+      spaceBetween: -250,
     },
-    1024: {
+    1020: {
+      slidesPerview: 2,
+      slidesPerGroup: 2,
+      spaceBetween: -300,
+    },
+    1058: {
       slidesPerview: 3,
+      slidesPerGroup: 3,
+      spaceBetween: -500,
+    },
+    1200: {
+      slidesPerview: 3,
+      slidesPerGroup: 3,
+      spaceBetween: -600,
     },
   },
 });
