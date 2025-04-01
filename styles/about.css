@@ -22,11 +22,11 @@
 
 .about-me-container {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 30px;
-
+  justify-items: center;
 }
 
 .about-me-container .image-container {
@@ -37,6 +37,7 @@
   background: transparent;
   margin-top: 50px;
   margin-left: 70px;
+  
 }
 
 .image-container .glow {
@@ -224,8 +225,7 @@
     margin-bottom: 20px;
   }
   .about-me-container {
-    display: grid;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 1fr);
   }
   .about-first-section h1 {
     font-size: 1.2rem;
@@ -287,9 +287,16 @@
     font-size: 0.3rem;
   }
   .about-first-section .buttons {
-    transform: translateX(-20%);
+    /* transform: translateX(-20%); */
   }
   .about-me-container {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me-details {
+    width: 100px;
+  }
+
 }
