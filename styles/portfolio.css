@@ -120,6 +120,85 @@
   background: rgba(0, 255, 0, 0.5);
 }
 
+.second-section {
+  height: fit-content;
+}
+
+.team-project-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  margin: 20px 30px;
+}
+
+.team-project-details {
+  position: relative;
+  text-decoration: none;
+  border: 2px solid #205c20;
+  border-radius: 10px;
+  padding: 30px;
+  transition: all 0.5s ease;
+}
+
+.team-project-details .team-project-title {
+  margin-bottom: 40px;
+}
+
+.team-project-details .badge {
+  color: aqua;
+  background: blue;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.team-project-details .team-project-desc {
+  width: 250px;
+  font-size: 0.9rem;
+  text-justify: auto;
+  font-weight: 400;
+}
+
+.team-project-desc .view-team-project {
+  position: absolute;
+  color: aqua;
+  padding: 4px 10px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.team-project-container .slide-deck-container {
+  flex: 1;
+}
+
+.watch-video {
+  color: #b22485;
+  background: #f7dff5;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 20px;
+}
+
+.watch-video .video-button {
+  background: none;
+  border: none;
+  transform: translateY(8px);
+  color: #b22485;
+  transition: all 0.3s ease;
+}
+
+.watch-video:hover .video-button {
+  padding-right: 5px;
+  transform: translateY(8px);
+  /* transform: rotate(-45deg); */
+  margin-left: 8px;
+  cursor: pointer;
+}
+
 .second-section .elevator-pitch-container {
   text-align: center;
   vertical-align: middle;
@@ -128,6 +207,23 @@
 }
 
 /* Style for responsive design */
+@media screen and (max-width: 1090px) {
+  .team-project-details {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .team-project-details {
+    width: 250px;
+  }
+
+  .team-project-details .team-project-desc {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+}
+
 @media screen and (max-width: 835px) {
   .card-list .card-item .card-link {
     width: 250px;
@@ -139,6 +235,21 @@
   .project-container {
     width: 20em;
   }
+
+  .team-project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  .watch-video, .watch-video .video-button {
+    font-size: 1rem;
+  }
+
+  .watch-video .video-button {
+    transform: translateY(4px)
+  }
+  
 }
 
 @media screen and (max-width: 480px) {
