@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sheyzie | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
+    />
 
     <!-- Link from Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/portfolio.css" />
   </head>
   <body>
-    
     <!-- Creating the rain matrix effect -->
-     <div>
+    <div>
       <canvas id="canvas1"></canvas>
-     </div>
-    
+    </div>
 
-      <header>
-        <nav>
+    <header>
+      <nav>
         <div class="left">
-          <img src="">
+          <img src="" />
           <p class="purple">Sheyzie</p>
         </div>
         <div class="right">
           <ul class="nav-main">
-            <label for="hamburger" class="hamburger-button open material-symbols-outlined">
+            <label
+              for="hamburger"
+              class="hamburger-button open material-symbols-outlined"
+            >
               menu
             </label>
             <li><a href="/index.html">Home</a></li>
@@ -46,10 +59,14 @@
             <li><a href="/contact.html">Contact Me</a></li>
           </ul>
 
-          <input type="checkbox" name="hamburger" id="hamburger">
+          <input type="checkbox" name="hamburger" id="hamburger" />
 
           <ul class="hamburger-menu">
-            <label for="hamburger" class="hamburger-button close material-symbols-outlined"><li>close</li></label>
+            <label
+              for="hamburger"
+              class="hamburger-button close material-symbols-outlined"
+              ><li>close</li></label
+            >
             <a href="/index.html"><li>Home</li></a>
             <a href="/about.html"><li>About</li></a>
             <a href="/portfolio.html"><li>Portfolio</li></a>
@@ -57,168 +74,262 @@
           </ul>
         </div>
       </nav>
-      </header>
+    </header>
 
-      <main class="main-css">
-        <section class="portfolio-first-section">
+    <main class="main-css">
+      <section class="portfolio-first-section">
+        <span class="text-dark-grey">What I have worked on so far</span>
+        <h1>Projects</h1>
 
-          <span class="text-dark-grey">What I have worked on so far</span>
-          <h1>Projects</h1>
+        <div class="container">
+          <div class="project-container swiper">
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/assets/img/dev-coding-css.png"
+                      alt=""
+                      class="card-image"
+                    />
+                    <p class="badge vba">VBA</p>
+                    <h2 class="card-title">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Blanditiis repudiandae accusamus eius nesciunt, omnis ut
+                      enim.
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/assets/img/dev-coding-css.png"
+                      alt=""
+                      class="card-image"
+                    />
+                    <p class="badge html">HTML</p>
+                    <h2 class="card-title">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Blanditiis repudiandae accusamus eius nesciunt, omnis ut
+                      enim.
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/assets/img/dev-coding-css.png"
+                      alt=""
+                      class="card-image"
+                    />
+                    <p class="badge css">CSS</p>
+                    <h2 class="card-title">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Blanditiis repudiandae accusamus eius nesciunt, omnis ut
+                      enim.
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/assets/img/dev-coding-css.png"
+                      alt=""
+                      class="card-image"
+                    />
+                    <p class="badge js">JavaScript</p>
+                    <h2 class="card-title">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Blanditiis repudiandae accusamus eius nesciunt, omnis ut
+                      enim.
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/assets/img/dev-coding-css.png"
+                      alt=""
+                      class="card-image"
+                    />
+                    <p class="badge python">Python</p>
+                    <h2 class="card-title">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Blanditiis repudiandae accusamus eius nesciunt, omnis ut
+                      enim.
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/assets/img/dev-coding-css.png"
+                      alt=""
+                      class="card-image"
+                    />
+                    <p class="badge python">Python</p>
+                    <h2 class="card-title">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Blanditiis repudiandae accusamus eius nesciunt, omnis ut
+                      enim.
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+              </ul>
 
-          <div class="container">
-            <div class="project-container swiper">
-              <div class="card-wrapper">
-                <ul class="card-list swiper-wrapper">
-                  <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                      <img src="/assets/img/dev-coding-css.png" alt="" class="card-image">
-                      <p class="badge vba">VBA</p>
-                      <h2 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae accusamus eius nesciunt, omnis ut enim.</h2>
-                      <button class="card-button material-symbols-rounded">
-                        arrow_forward
-                      </button>
-                    </a>
-                    
-                  </li>
-                  <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                      <img src="/assets/img/dev-coding-css.png" alt="" class="card-image">
-                      <p class="badge html">HTML</p>
-                      <h2 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae accusamus eius nesciunt, omnis ut enim.</h2>
-                      <button class="card-button material-symbols-rounded">
-                        arrow_forward
-                      </button>
-                    </a>
-                    
-                  </li>
-                  <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                      <img src="/assets/img/dev-coding-css.png" alt="" class="card-image">
-                      <p class="badge css">CSS</p>
-                      <h2 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae accusamus eius nesciunt, omnis ut enim.</h2>
-                      <button class="card-button material-symbols-rounded">
-                        arrow_forward
-                      </button>
-                    </a>
-                    
-                  </li>
-                  <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                      <img src="/assets/img/dev-coding-css.png" alt="" class="card-image">
-                      <p class="badge js">JavaScript</p>
-                      <h2 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae accusamus eius nesciunt, omnis ut enim.</h2>
-                      <button class="card-button material-symbols-rounded">
-                        arrow_forward
-                      </button>
-                    </a>
-                    
-                  </li>
-                  <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                      <img src="/assets/img/dev-coding-css.png" alt="" class="card-image">
-                      <p class="badge python">Python</p>
-                      <h2 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae accusamus eius nesciunt, omnis ut enim.</h2>
-                      <button class="card-button material-symbols-rounded">
-                        arrow_forward
-                      </button>
-                    </a>
-                    
-                  </li>
-                  <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                      <img src="/assets/img/dev-coding-css.png" alt="" class="card-image">
-                      <p class="badge python">Python</p>
-                      <h2 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae accusamus eius nesciunt, omnis ut enim.</h2>
-                      <button class="card-button material-symbols-rounded">
-                        arrow_forward
-                      </button>
-                    </a>
-                    
-                  </li>
-                </ul>
-  
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
-          </div> 
-              
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="second-section">
-          <span class="text-dark-grey">This is me as a team player</span>
-          <h1>Team Projects</h1>
-          <div class="team-project-container">
-            <div class="team-project-details">
-              <h3 class="team-project-title">Emergency Response App</h3>
-              <p class="badge">Healthcare</p>
-              <p class="team-project-desc text-dark-grey">
-                An AI-powered Smart Emergency Response System that uses real-time traffic data and intelligent signal control to prioritize ambulances and reduce delays. By optimizing emergency routes and notifying drivers to clear paths, it ensures faster response times and saves lives in Lagos.
-              </p>
+      <section class="second-section">
+        <span class="text-dark-grey">This is me as a team player</span>
+        <h1>Team Projects</h1>
+        <div class="team-project-container">
+          <div class="team-project-details">
+            <h3 class="team-project-title">Emergency Response App</h3>
+            <p class="badge">Healthcare</p>
+            <p class="team-project-desc text-dark-grey">
+              An AI-powered Smart Emergency Response System that uses real-time
+              traffic data and intelligent signal control to prioritize
+              ambulances and reduce delays. By optimizing emergency routes and
+              notifying drivers to clear paths, it ensures faster response times
+              and saves lives in Lagos.
+            </p>
+          </div>
+          <div class="slide-deck-container">
+            <div
+              style="
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 56.25%;
+                padding-bottom: 0;
+                box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+                margin-top: 1.6em;
+                margin-bottom: 0.9em;
+                overflow: hidden;
+                border-radius: 8px;
+                will-change: transform;
+              "
+            >
+              <iframe
+                loading="lazy"
+                style="
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                "
+                src="https://www.canva.com/design/DAGg3ls8SRk/473NriJRBPXFOO4tSFjgJg/view?embed"
+                allowfullscreen="allowfullscreen"
+                allow="fullscreen"
+              >
+              </iframe>
             </div>
-            <div class="slide-deck-container">
-              <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-              padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-              border-radius: 8px; will-change: transform;">
-                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                  src="https://www.canva.com/design/DAGg3ls8SRk/473NriJRBPXFOO4tSFjgJg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                </iframe>
-              </div>
-              <a class="watch-video" href="https://youtu.be/BHeVxPxouUE?si=pce3Dr9_DebeUQhF" target="_blank" rel="noopener">Watch Pitch Video <button class="video-button material-symbols-rounded">
+            <a
+              class="watch-video"
+              href="https://youtu.be/BHeVxPxouUE?si=pce3Dr9_DebeUQhF"
+              target="_blank"
+              rel="noopener"
+              >Watch Pitch Video
+              <button class="video-button material-symbols-rounded">
                 arrow_forward
-              </button></a>
-            </div>
-          </div>
-          
-        </section>
-
-        <section class="second-section">
-          <span class="text-dark-grey">Still want to know more</span>
-          <h1>My Elevator Pitch</h1>
-          <div class="elevator-pitch-container">
-            Elevator Pitch Goes Here
-          </div>
-          
-        </section>
-        
-      </main>
-      <footer>
-        <div class="footer">
-          <div class="footer-first">
-            <h3>Olukosi's Developer Portfolio</h3>
-          </div>
-          <div class="footer-second">
-            <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/portfolio.html">Portfolio</a></li>
-              <li><a href="/contact.html">Contact Me</a></li>
-            </ul>
-            
-          </div>
-          <div class="footer-third">
-            <div class="socials-container">
-              <a href="https://x.com/OlukosiH" target="_blank">
-                <img src="assets/img/dev-coding-twitter.png" alt="" class="social" loading="lazy">
-              </a>
-            </div>
-            <div class="socials-container">
-              <a href="https://www.linkedin.com/in/oluwaseyi-olukosi-539549358/" target="_blank">
-                <img src="assets/img/dev-coding-linkedin.png" alt="" class="social" loading="lazy">
-              </a>
-            </div>
+              </button></a
+            >
           </div>
         </div>
+      </section>
 
-        <div class="text-rights  text-dark-grey">
-          copyright &copy; oluwaseyi.sheyzie.com | All rights reserved
+      <section class="second-section">
+        <span class="text-dark-grey">Still want to know more</span>
+        <h1>My Elevator Pitch</h1>
+        <div class="elevator-pitch-container">
+          <iframe
+
+            src="https://www.youtube.com/embed/FGV5P6TKrqo?si=JyvAqZyw_RKz6ZE3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
-      </footer>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Olukosi's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <div class="socials-container">
+            <a href="https://x.com/OlukosiH" target="_blank">
+              <img
+                src="assets/img/dev-coding-twitter.png"
+                alt=""
+                class="social"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="socials-container">
+            <a
+              href="https://www.linkedin.com/in/oluwaseyi-olukosi-539549358/"
+              target="_blank"
+            >
+              <img
+                src="assets/img/dev-coding-linkedin.png"
+                alt=""
+                class="social"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <!-- Linking script from swiper -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <div class="text-rights text-dark-grey">
+        copyright &copy; oluwaseyi.sheyzie.com | All rights reserved
+      </div>
+    </footer>
 
-     <script type="module" src="scripts/portfolio.js"></script>
+    <!-- Linking script from swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module" src="scripts/portfolio.js"></script>
   </body>
 </html>
